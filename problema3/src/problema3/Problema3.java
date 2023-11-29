@@ -22,7 +22,18 @@ public class Problema3 {
         int n;
         int m;
         int resultado = 0;
-        System.out.println("Ingrese su valor de n");
+        System.out.println("Ingrese su multiplicando");
+        n = entrada.nextInt();
+        System.out.println("Ingrese su multiplicador");
+        m = entrada.nextInt();
+        while (m >1){
+            n = n *2;
+            m = m / 2;
+            if (m % 2 == 1){
+                resultado = resultado + n;
+            }
+        }
+        System.out.printf("%d",resultado);
     }
     
 }
